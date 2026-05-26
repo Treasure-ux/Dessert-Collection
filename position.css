@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent_container {
+    width: 100%;
+}
+body{
+    background: linear-gradient(to left, rgba(51, 50, 50, 0.933), rgba(204, 21, 174, 0.829));
+}
+.parent_container{
+    width: 100%;
+}
+.parent_container p{
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.collections{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: cursive;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top:50px;
+}
+.box{
+    width: 300px;
+    height: 450px;
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1000;
+}
+.box img{
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.box h2{
+    padding: 0px 20px;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+}
+.box p {
+    padding: 0px 20px;
+    font-weight: lighter;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-family: sans-serif;
+    color: white;
+}
+.box h3{
+    background-color: blueviolet;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;  
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -4%;
+    top: -5%;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    box-shadow: 1px 1px 5px black;
+}
+.box button {
+    margin: 15px 20px 0px 10px;
+    padding: 10px 25px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    width: 93%;
+    border: none;
+    transition: .3s ease-out;
+    box-shadow: 1px 1px 2px rgb(110, 110, 110);
+    font-weight: bold;
+}
+.box button:hover {
+    background-color: transparent;
+    border: 2px solid blueviolet;
+    color: blueviolet;
+    font-weight: bold;
+    cursor: pointer;
+}
+.logo-container {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    position: sticky;
+    bottom: 10%;
+    right: 0%;
+    animation: anime .6s 2s linear infinite normal;
+}
+@keyframes anime{
+    from{bottom: 10%;}
+    to{bottom: 11%;}
+}
