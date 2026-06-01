@@ -106,9 +106,23 @@ body{
     bottom: 10%;
     right: 0%;
     animation: anime .6s 2s linear infinite normal;
-    z-index:200;
+    z-index:2000;
 }
 @keyframes anime{
     from{bottom: 10%;}
     to{bottom: 11%;}
+}
+@media (max-width:780px){
+    .box{
+        width: 80%;
+        height: 450px;
+        background-color: black;
+        border-radius: 10px;
+        position: relative;
+    }
+    .box img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    }
 }
